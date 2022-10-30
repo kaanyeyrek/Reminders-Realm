@@ -39,6 +39,7 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
         setup()
         field.becomeFirstResponder()
         field.delegate = self
+        datePicker.setDate(Date(), animated: true)
         view.backgroundColor = .systemBackground
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(didTapCancel))
